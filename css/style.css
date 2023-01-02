@@ -1,0 +1,211 @@
+body{
+    margin: 0px;
+   
+}
+ 
+:root{
+    --fontb : 'Karla', sans-serif;
+}
+
+.floatingnav{
+    z-index: 40;
+    position: fixed;
+    right: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4vh;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 6vh;
+}
+
+.floatingnav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 10em;
+    width: 5vh;
+    height: 5vh;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.floatingnav a:hover{
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+.container{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
+
+    
+}
+
+section{
+    height: 100vh;
+ 
+}
+
+.intro_para span {
+  margin: 0 1vw;
+  font-weight: bold;
+}
+
+.intro{
+
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+
+}
+
+
+
+.intro_txt {
+    display: flex;
+    column-gap: 6vh;
+    font-size: 10rem;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10vh;
+
+}
+
+.intro_para{
+    column-gap: 5vw;
+    display: flex;
+ 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 7vw;
+}
+
+.intro_para2{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.intro_para2 > p {
+    margin-top: 10vh;
+}
+
+.txt_one{
+
+    -webkit-background-clip: text;
+    background-repeat: repeat;
+    background-clip: text;
+    background-size: 100px 200px;
+    color: transparent;
+    background-position: 0px 0px;
+    animation: iridSlide 2s linear infinite;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+
+
+.para_one{
+       
+ 
+    color: white;
+}
+
+.txt_two{
+    -webkit-background-clip: text;
+    background-repeat: repeat;
+    background-clip: text;
+    background-size: 1800px 900px;
+    color: transparent;
+    background-position: 0px 0px;
+    animation: topoSlide 30s linear infinite;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.para_two{
+ 
+    color: black;
+}
+
+
+.column{
+display: flex;
+justify-content: space-between;
+}
+
+.column div {
+    width: 32.5vw;
+}
+
+
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    
+    mix-blend-mode: difference;
+    flex-direction: column;
+    filter: invert(1) contrast(2);
+}
+
+.middle .img1{
+    width: 25rem;
+    height: 31.25rem;
+     
+}
+
+.middle .img2{
+    width: 16rem;
+    height: 33.25rem;
+}
+
+.left{
+ color: white;
+
+}
+
+.right{
+   
+}
+
+
+
+
+@keyframes topoSlide
+{
+	0% {
+		background-position:  0px 0px;
+	}
+	100% {
+		background-position: 1800px 900px;
+	}
+}
+
+@keyframes iridSlide
+{
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: -100px 200px;
+	}
+}
